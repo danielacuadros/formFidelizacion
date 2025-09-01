@@ -8,6 +8,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/ciudades")
+@CrossOrigin(origins = "*")
 public class CiudadControlador {
 
     private final CiudadServicio ciudadServicio;

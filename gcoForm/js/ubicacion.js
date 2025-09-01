@@ -14,6 +14,7 @@ export async function cargarUbicaciones() {
     const respPaises = await fetch("http://localhost:8080/api/ciudades/paises");
     const paises = await respPaises.json();
 
+
     paisSelect.innerHTML = "<option value=''>Seleccione país...</option>";
     paises.forEach((pais) => {
       const opt = document.createElement("option");

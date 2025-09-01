@@ -1,4 +1,3 @@
-
 package com.gco.clientesapp.modelo;
 
 import jakarta.persistence.*;

@@ -8,13 +8,10 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/marcas")
+@CrossOrigin(origins = "*")   // ← añade esto
 public class MarcaControlador {
-
     private final MarcaServicio marcaServicio;
-
-    public MarcaControlador(MarcaServicio marcaServicio) {
-        this.marcaServicio = marcaServicio;
-    }
+    public MarcaControlador(MarcaServicio marcaServicio) { this.marcaServicio = marcaServicio; }
 
     @GetMapping
     public List<Marca> obtenerTodasLasMarcas() {

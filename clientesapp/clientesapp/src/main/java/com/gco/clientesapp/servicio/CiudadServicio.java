@@ -20,7 +20,14 @@ public class CiudadServicio {
     }
 
     public List<String> obtenerPaises() {
-        return ciudadRepositorio.findDistinctPaises();
+        List<String> paises = ciudadRepositorio.findDistinctPaises();
+
+        // Respaldo si la consulta devuelve vacío
+        if (paises == null || paises.isEmpty()) {
+            paises = List.of("Colombia", "México", "Argentina");
+        }
+
+        return paises;
     }
 
     public List<String> obtenerDepartamentosPorPais(String pais) {
