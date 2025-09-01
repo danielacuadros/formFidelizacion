@@ -80,7 +80,7 @@ Aplicación desarrollada con Python y MySQL para realizar búsquedas avanzadas s
 
 formFidelizacion/
 │
-├── gcoBack// Proyecto backend → Java (IntelliJ)
+├── clientesapp// Proyecto backend → Java (IntelliJ)
 ├── gcoForm// Frontend → Formulario web (Visual Studio Code)
 ├── gcoPython// motor de busqueda → Proyecto Python (PyCharm)
 ├── README.md → Documentación del proyecto
